@@ -38,7 +38,7 @@ public class ArithmeticController {
         var result = webClient.post().body(BodyInserters.fromValue(body))
                 .retrieve()
                 //TODO set timeout in config
-                .bodyToMono(String.class).onErrorResume(e -> fallback()).timeout(Duration.ofMillis(1000));
+                .bodyToMono(String.class).onErrorResume(e -> fallback()).timeout(Duration.ofMillis(2000));
         return result;
     }
 
