@@ -1,0 +1,4 @@
+spring.application.name : client
+eureka:
+  client :
+    register-with-eureka : false
