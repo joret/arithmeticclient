@@ -30,9 +30,5 @@ public class ArithmeticController {
         //TODO try to bind body as object maybe?
         var result = webClient.post().body(BodyInserters.fromValue(body)).retrieve().bodyToMono(String.class);
         return result;
-
-    /*    return loadBalancedWebClientBuilder.build().post().uri("http://arithmetic-client/operation")
-                .retrieve().bodyToMono(String.class)
-                .map(operation -> String.format("%s, %s!", operation, name));*/
     }
 }
