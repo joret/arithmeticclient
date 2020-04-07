@@ -9,6 +9,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 @SpringBootApplication
 public class ArithmeticApplication {
 
+	//TODO create log definition file
 	public static void main(String[] args) {
 		SpringApplication.run(ArithmeticApplication.class, args);
 	}
